@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>D&D Game</title>
+</head>
+<body>
+<center><h1>Hello Adventurer! xD</h1></center>
+<center><h2>Enter your character's name!</h2></center>
+<form action="#" th:action="@{/index}" method="post" class="form-signin">
+    <center>
+        <label for="name">Name:</label>
+        <input id="name" type="text" th:field="${form}" autofocus class="form-control"/>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+    </center>
+</form>
+</body>
+</html>
